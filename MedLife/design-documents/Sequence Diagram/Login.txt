@@ -1,0 +1,25 @@
+title Login
+participant user
+participant Sign up/Login Page
+user->Sign up/Login Page:enter_username_password_role()
+activate Sign up/Login Page
+user->>Sign up/Login Page:login()
+deactivate Sign up/Login Page
+activate Database
+activate user
+Sign up/Login Page->>Database:retrieve_user()
+deactivate Database
+deactivate user
+alt user_exists
+activate Sign up/Login Page
+user<--Sign up/Login Page:[Accepted]
+deactivate Sign up/Login Page
+activate user
+deactivateafter user
+else invalid_user
+activate Sign up/Login Page
+user<--Sign up/Login Page:[invalid]
+deactivate Sign up/Login Page
+activate user
+deactivateafter user
+end
