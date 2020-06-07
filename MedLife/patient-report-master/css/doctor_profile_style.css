@@ -1,0 +1,401 @@
+/* Add a black background color to the top navigation */
+* {
+  margin: 0;
+}
+
+.topnav {
+  font-family: 'Montserrat';font-size: 22px;
+  background-color: #314652;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+
+.container {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+#wrapper {
+   position:relative;
+   margin: 0 auto;
+}
+
+.float {
+   height:300px; 
+   margin:0; 
+   padding:0;
+}
+
+/*.Profile-card{
+  position:fixed; 
+  background: white;
+  height: 490px;
+  width: 22%;
+  margin-left: 0%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #314652;
+  box-shadow: 1px 2px 8px 3px;
+}
+*/.top{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.top img{
+  width: 100%;
+  height: 199px;
+}
+#rectangle {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-left: 400px solid white;
+  position: absolute;
+  bottom: 0;
+}
+.content{
+  padding: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+.content h2{
+  margin: 0 0 8px 0px;
+  text-transform: uppercase;
+}
+.content h3{
+  margin: 0;
+  text-transform: uppercase
+}
+/*.content ul{
+  margin: 0;
+  padding: 0;
+}
+.content ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+}
+.content ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  background: #314652;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.2s all;
+}*/
+/*.content ul li a:hover {
+    transform: scale(1.2);
+}*/
+#rectangle1 {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid transparent;
+  border-right: 400px solid white;
+  position: absolute;
+  top: -1px;
+}
+.footer{
+  position: relative;
+  top: 130px;
+  width: 100%;
+  height: 70px;
+  background: #314652;
+  color: white;
+}
+.footer p{
+  display: block;
+  margin: 0;
+  padding: 26px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+.cancelButton {
+  float: right;
+  margin-right:10px; 
+  margin-top: 15px; 
+  margin-bottom: 15px;
+  color:#666;
+  font-weight:bold;
+  text-decoration:none;
+}
+input[type=submit] {
+  display:inline-block;
+  float: right;
+  padding:12px 20px;
+  background:#4CAF50;
+  color:white;
+  border:2px solid #fff;
+  border-radius: 4px;
+  cursor:pointer;
+  transition: background 0.4s ease;
+}
+
+/*input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}*/
+
+/* Style the form_container */
+.form_container {
+  /*float: right;*/
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding-right: 25px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  padding-left: 5%;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  padding-right: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}*/
+
+#frame1, #frame0 {
+  background-color: #F7F7F7;
+  margin: 30px auto auto;
+  padding: 10px;
+  width: 750px;
+  border:1px solid #EEE;
+}
+#fade {
+  background: none repeat scroll 0 0 #D3DCE3;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+#centerBox {
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  display: none;
+  max-height: 480px;
+  overflow: auto;
+  visibility: hidden;
+  width: 710px;
+  z-index: 100;
+}
+.box1 {
+  background: none repeat scroll 0 0 #F3F7FD;
+  border: 1px solid #D3E1F9;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 4px;
+}
+.button1 {
+  background-color: #FFFFFF;
+  background-image: -moz-linear-gradient(center bottom, #EDEDED 30%, #FFFFFF 83%);
+  border-color: #999999;
+  border-radius: 2px 2px 2px 2px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 24px;
+  margin-right: 2px;
+  min-width: 40px;
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+}
+.button1:hover {
+  text-decoration: underline;
+}
+.button1:active, .a:active {
+  position: relative;
+  top: 1px;
+}
+
+
+#imgContainer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+#imgArea {
+  display: inline-block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+#imgArea img {
+  outline: medium none;
+  vertical-align: middle;
+  width: 100%;
+}
+#imgChange {
+  background: url("../img/overlay.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  bottom: 0;
+  color: #FFFFFF;
+  display: block;
+  height: 30px;
+  left: 0;
+  line-height: 32px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+#imgChange input[type="file"] {
+  bottom: 0;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+/* Progressbar */
+.progressBar {
+  background: none repeat scroll 0 0 #E0E0E0;
+  left: 0;
+  padding: 3px 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: none;
+}
+.progressBar .bar {
+  background-color: #FF6C67;
+  width: 0%;
+  height: 14px;
+}
+.progressBar .percent {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  width: 100%;
+}
+
+
+.actionButtons {
+  margin:5px 5px 0;
+}
+.editButton {
+  float: right;
+  display:none;
+  margin-top:15px;
+  margin-bottom: 15px;
+  padding:12px 20px;
+  background:#42b9f4;
+  color:#fff;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.4s ease;
+}
+
+button {
+  display:block;
+  margin:5px;
+}
+.readOnly .actionButtons{display:none;}
+.readOnly .editButton{display:block;cursor:pointer;}
+.disabled .editButton{display:block;cursor:default;}
+.disabled .editButton:hover{background:#9db0a3;}
+input:disabled{background-color:#d9edf7;}
+textarea:disabled{background-color: #f2dede;}
